@@ -1,0 +1,24 @@
+﻿<Window x:Class="wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="600" Width="600" FontSize="20">
+    <StackPanel VerticalAlignment="Top" Margin="10">
+        <Label Content="Введите первое число:" DockPanel.Dock="Top" HorizontalContentAlignment="Center" Margin="10 10 10 10" Width="230"/>
+        <TextBox DockPanel.Dock="Top" x:Name="Aba"/>
+        <Label Content="Введите второе число" DockPanel.Dock="Top" HorizontalContentAlignment="Center" Margin="10 10 10 10" Width="230"/>
+        <TextBox  DockPanel.Dock="Top" x:Name="Ba"/>
+        <Button Content="Модуль и норма комплексного числа" Margin="0 10 0 0" DockPanel.Dock="Top" Click="Button_Click_1"/>
+        <TextBlock x:Name="Result1" DockPanel.Dock="Top"/>
+        <Label Content="---------------------------------------------------------------------------"/>
+        <Label Content="Введите X:" DockPanel.Dock="Top"  Margin="10 10 10 10" Width="230" HorizontalContentAlignment="Center"/>
+        <TextBox  DockPanel.Dock="Top" x:Name="X"/>
+        <Label Content="Введите Y:" DockPanel.Dock="Top"  Margin="10 10 10 10" Width="230" HorizontalContentAlignment="Center"/>
+        <TextBox DockPanel.Dock="Top" x:Name="Y"/>
+        <Button Content="Модуль и норма вектора" Margin="0 10 0 0" DockPanel.Dock="Top" Click="Button_Click2"/>
+        <TextBlock x:Name="Result2" DockPanel.Dock="Top"/>
+    </StackPanel>
+</Window>
